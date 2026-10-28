@@ -1,0 +1,30 @@
+MODULE 4 — DECISION ANALYTICS ENGINE
+
+Package: acs.analytics
+
+1. DecisionAnalyticsEngine
+
+- evaluateDecisions(): Displays basic decision-evaluation messages.
+- generateReport(...): Creates an analytics report using incident counts, response-time data, and vehicle utilization.
+- compareStrategies(...): Creates a strategy comparison object.
+- compareTwoStrategies(...): Compares two strategies using average response time and incidents resolved. Returns the winning strategy name or "Tie".
+
+2. AnalyticsReport
+   Stores total incidents, resolved incidents, average response time, and vehicle utilization percentage.
+
+3. IncidentAnalytics
+   Stores total, pending, resolved, and cancelled incident counts and calculates active incidents.
+
+4. ResponseTimeMetrics
+   Stores response-time statistics and calculates average response time.
+
+5. StrategyComparison
+   Stores a strategy's name, average response time, resolved incidents, and vehicle utilization.
+
+6. VehicleUtilization
+   Stores vehicle activity time and available time and calculates utilization percentage.
+
+STATUS
+The analytics classes and unit tests have passed locally. Integration with the actual simulation data still needs to be verified.
+
+Note: Please confirm that the public method signatures match the shared project interfaces before integration.
